@@ -1,0 +1,215 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: #3c9b9e;
+  color: white;
+}
+.topnav a.right {
+  float: right;
+}
+.center {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  float: center;
+  color: black;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  background-color: #3c9b9e;
+  
+}
+.container .box {
+  position: relative;
+  width: 280px;
+  padding: 30px;
+  background:white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container .box .icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+
+.container .box:nth-child(1) .icon {
+  background-color: yellowgreen;
+}
+
+/* image clip path part*/
+.container .box:nth-child(1) .icon img,
+.container .box:nth-child(2) .icon img,
+.container .box:nth-child(3) .icon img,
+.container .box:nth-child(4) .icon img,
+.container .box:nth-child(5) .icon img {
+  clip-path: circle(50% at 50% 50%);
+}
+
+/* image clip path part*/
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px yellowgreen;
+}
+
+.container .box:nth-child(2) .icon {
+  background-color: SlateBlue;
+}
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px SlateBlue;
+}
+
+.container .box:nth-child(3) .icon {
+  background-color: Tomato;
+}
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px Tomato;
+}
+
+.container .box:nth-child(4) .icon {
+  background-color: purple;
+}
+.container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 400px purple;
+}
+
+.container .box:nth-child(5) .icon {
+  background-color: MediumSeaGreen;
+}
+.container .box:nth-child(5):hover .icon {
+  box-shadow: 0 0 0 400px MediumSeaGreen;
+}
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+h2 {
+  font-size: 17px;
+}
+a{
+  margin-top: 10px;
+  font-size: 15px;
+}
+h3 {
+  text-align: center;
+margin-top: 25px;}
+
+.headingtm {
+  background-color: #fff;
+  align-self: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 42%;
+  font-size: medium;
+}
+
+.info {
+  position: relative;
+  align-self: center;
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 15%;
+  color: #fff;
+  font-size: xx-large;
+}
+
+/* input area */
+.areaip {
+  height: 1800px;
+  padding-left: 30%;
+  padding-top: 550px;
+}
+
+.internalip {
+  position: relative;
+  align-self: center;
+}
+
+button {
+  align-self: center;
+  margin-left: 17%;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace, Impact;
+  color: #fff;
+  padding: 10px;
+  width: 20%;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3c9b9e;
+  background-color: transparent;
+  cursor: pointer;
+}  
+
+button:hover {
+  box-shadow: 0 2px 20px 0 #8ce3e5 inset, 0 2px 20px 0 #8ce3e5,
+              0 2px 20px 0 #8ce3e5 inset, 0 2px 20px 0 #8ce3e5;
+}
+
+input {
+  align-self: center;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Courier New', Courier, monospace, Impact;
+  color: #fff;
+  padding: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 800px;
+  border-radius: 35px;
+  border-style: solid;
+  border-width: medium;
+  border-color: #3c9b9e;
+  background-color: transparent;
+}
+
+input:hover {
+  box-shadow: 0 2px 20px 0 #8ce3e5 inset, 0 2px 20px 0 #8ce3e5,
+              0 2px 20px 0 #8ce3e5 inset, 0 2px 20px 0 #8ce3e5;
+}
+
+::placeholder {
+  color: #fff;
+  font-size: xx-large;
+  text-align: center;
+}
+.output{
+  
+  color: yellow;
+  font-size: 40px;
+}
